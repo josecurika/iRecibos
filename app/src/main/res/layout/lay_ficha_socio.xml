@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ToolBarStyle"
+        android:background="@color/colorPrimaryDark"
+        android:minHeight="@dimen/abc_action_bar_default_height_material" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/caja_remarcada"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="@dimen/texto_H3"
+                android:textStyle="bold"
+                android:text="Nombre" />
+
+            <TextView
+                android:id="@+id/txtDireccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="@dimen/texto_H3b"
+                android:text="Direccion" />
+
+            <TextView
+                android:id="@+id/txtPoblacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="@dimen/texto_H3b"
+                android:text="Poblacion" />
+
+            <TextView
+                android:id="@+id/txtDni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="@dimen/texto_H3b"
+                android:text="Dni" />
+
+            <TextView
+                android:id="@+id/txtTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="@dimen/texto_H3b"
+                android:text="Telefonos" />
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="@dimen/texto_H3b"
+                android:text="Email" />
+
+            <TextView
+                android:id="@+id/txtTipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="@dimen/texto_H3b"
+                android:text="Tipo" />
+
+            <TextView
+                android:id="@+id/txtFormaPago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="@dimen/texto_H3b"
+                android:text="Forma de pago" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnLlamar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:textSize="@dimen/texto_H3"
+                    android:text="Llamar" />
+
+                <Button
+                    android:id="@+id/btnSms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:textSize="@dimen/texto_H3"
+                    android:text="SMS" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ToolBarStyle"
+        android:background="@color/colorPrimaryDark"
+        android:minHeight="@dimen/abc_action_bar_default_height_material" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/caja_remarcada"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/negro"
+            android:text="Ejercicio"
+            android:textSize="@dimen/texto_H3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/caja_remarcada"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spinner_ejercicio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:spinnerMode="dropdown"
+                android:textSize="@dimen/texto_H3"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/caja_remarcada"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtMensaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/negro"
+            android:text=""
+            android:textSize="@dimen/texto_H3"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtDevueltos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/negro"
+        android:textSize="@dimen/texto_H4"
+        android:text="Devueltos 0.0%" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/caja_remarcada"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/layDevueltos"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@color/rojo">
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtPendientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/negro"
+        android:textSize="@dimen/texto_H4"
+        android:text="Pendientes 0.0%" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/caja_remarcada"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/layPendientes"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@color/naranja">
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtRemesados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/negro"
+        android:textSize="@dimen/texto_H4"
+        android:text="Remesados 0.0%" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/caja_remarcada"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/layRemesados"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@color/azul">
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtPagados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/negro"
+        android:textSize="@dimen/texto_H4"
+        android:text="Pagados 0.0%" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/caja_remarcada"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/layPagados"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@color/verde">
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtAnulados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/negro"
+        android:textSize="@dimen/texto_H4"
+        android:text="Anulados 0.0%" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/caja_remarcada"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/layAnulados"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@color/amarillo">
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

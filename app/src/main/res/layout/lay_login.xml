@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#5fb0c9"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_irecibos"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="iRecibos"
+        android:textColor="#fff"
+        android:textSize="@dimen/texto_H1"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/caja_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:padding="20dp"
+        android:visibility="visible">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <EditText
+                android:id="@+id/txtUsuario"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableTint="#FF4081"
+                android:hint="Codigo de Usuario"
+                android:textSize="@dimen/texto_H3"
+                android:inputType="number"
+                android:focusable="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableTint="#FF4081"
+                android:hint="Contraseña"
+                android:textSize="@dimen/texto_H3"
+                android:inputType="text"
+                android:focusable="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnAcceso"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/botonmio"
+            android:text="Entrar"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="@dimen/texto_H2" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lblVersion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Copyright iRecibos.com - v 1.00"
+        android:textColor="#fff"
+        android:textSize="@dimen/texto_H4"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtComprobarVersion"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Comprobando Version ..."
+        android:textColor="#fff"
+        android:textSize="@dimen/texto_H3"
+        android:textStyle="bold" />
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/regDirectorio"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/caja_remarcada"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:paddingBottom="2dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp">
+
+        <TextView
+            android:id="@+id/txtNombre"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Nombre de Usuario"
+            android:textSize="@dimen/texto_H4"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDireccion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Direccion de Usuario"
+            android:textSize="@dimen/texto_H4" />
+
+        <TextView
+            android:id="@+id/txtFormaPago"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="FP de Usuario"
+            android:textSize="@dimen/texto_H4" />
+
+        <TextView
+            android:id="@+id/txtTelefono"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:text="Numero de Telefono"
+            android:textColor="@color/azul"
+            android:textSize="@dimen/texto_H4"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

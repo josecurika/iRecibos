@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/mnuFichas"
+            android:icon="@drawable/ic_menu_account"
+            android:title="Fichas" />
+        <item
+            android:id="@+id/mnuRecibos"
+            android:icon="@drawable/ic_menu_cash_100"
+            android:title="Recibos" />
+        <item
+            android:id="@+id/mnuContabilidad"
+            android:icon="@drawable/ic_menu_chart_line"
+            android:title="Contabilidad" />
+        <item
+            android:id="@+id/mnuComunicaciones"
+            android:icon="@drawable/ic_menu_bell_ring"
+            android:title="Comunicaciones" />
+    </group>
+
+    <item android:title="Opciones">
+        <menu>
+            <item
+                android:id="@+id/mnuMultimedia"
+                android:icon="@drawable/ic_menu_image_filter"
+                android:title="Multimedia" />
+            <item
+                android:id="@+id/mnuCerrar"
+                android:icon="@drawable/ic_menu_close_circle"
+                android:title="Cerrar" />
+        </menu>
+    </item>
+
+</menu>
